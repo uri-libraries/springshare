@@ -843,4 +843,9 @@ cl-social {
     x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?13442";
     var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
   })();
+
+$(document).ready(function() {
+    $('<div id="s-lg-creative-commons" class="container s-lib-side-borders" style="text-align: center !important; padding: 10px 0 !important; margin-top: 20px !important; font-size: 14px !important; display: block !important; font-weight: bold !important;"><p style="margin: 0 !important;">This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: #0000FF !important; text-decoration: underline !important;">Creative Commons Attribution 4.0 International License</a>.</p></div>')
+        .insertBefore('#s-lib-footer-public');
+});
 </script>
