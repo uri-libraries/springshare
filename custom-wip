@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern LibGuide Template</title>
+    <meta name="google-site-verification" content="Ozh587HeLEuKy4KdoWPpED7PQtNZP74Tx-i0ZMijIwE" />
+
+    <!--
+        Load Google Fonts for a modern look, prioritizing your existing Lato and Hind fonts.
+        Font Awesome for icons, if not already loaded by LibGuides.
+    -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Hind:400,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* Define Brand Colors as CSS variables for easy management */
+        :root {
+            --uri-dark-blue: #002147;
+            --uri-action-blue: #003b8d;
+            --uri-accent-blue: #005eff;
+            --uri-light-blue: #2277b3;
+            --uri-gradient-blue-1: #009DFF;
+            --uri-gradient-blue-2: #0900FF;
+            --uri-tagline-light-blue: #c0ddf2;
+
+            /* Main brand colors used throughout the modernized template */
+            --brand-primary-color: var(--uri-action-blue); /* Used for active states, buttons, links */
+            --brand-primary-color-dark: var(--uri-dark-blue); /* Darker shade for hover/backgrounds */
+            --brand-primary-color-rgb: 0, 59, 141; /* RGB for rgba() usage of --brand-primary-color */
+        }
+
+        /*
+         * General Body & Container Styling
+         * Applies a clean, modern font, a soft background color,
+         * and consistent rounded corners and subtle shadows for main containers.
+         */
+        body {
+            font-family: 'Hind', Arial, sans-serif; /* Use Hind for body as per your CSS */
+            font-size: 14px; /* Retain your specified base font size */
+            background-color: #f0f2f5; /* Very light gray for a soft background */
+            color: #333; /* Dark gray for main text for good readability */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased; /* Smoother font rendering */
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /*
+         * Main content containers
+         * These styles give the main sections a card-like appearance.
+         */
+        .container {
+            background-color: #ffffff; /* White background for content blocks */
+            border-radius: 12px; /* More pronounced rounded corners for modern look */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* Softer, more diffuse shadow */
+            margin-bottom: 25px; /* Increased space between sections */
+            border: none; /* Remove any default hard borders */
+            padding: 25px 30px; /* Generous internal padding */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        /* Remove default LibGuides side borders if they conflict with new design */
+        .s-lib-side-borders {
+            border: none !important;
+        }
+
+        /* Retain full-width margins for specific elements as per your custom CSS */
+        #siteheader,
+        #actionbar-wrapper,
+        #globalfooter {
+            margin-left: -15px;
+            margin-right: -15px;
+            width: auto; /* Ensure it expands to fill */
+        }
+
+        /*
+         * Header Area Styling
+         * Focuses on making the guide title prominent and the search bar sleek.
+         */
+        #s-lg-guide-header {
+            padding: 40px 30px; /* More padding for a spacious header */
+            position: relative;
+            overflow: hidden;
+            display: flex; /* Use flexbox for better alignment */
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the start (left) */
+        }
+
+        #s-lg-guide-header-info {
+            width: 100%; /* Ensure info section takes full width */
+        }
+
+        #s-lg-guide-header h1#s-lg-guide-name {
+            font-family: 'Lato', 'Hind', Arial, sans-serif; /* Use Lato for titles */
+            font-size: 2.8em; /* Larger, more modern title font size */
+            color: var(--uri-dark-blue); /* A deep, professional dark blue/gray */
+            margin-bottom: 10px;
+            font-weight: 700; /* Bolder title */
+            line-height: 1.2;
+        }
+
+        #s-lg-guide-desc-container #s-lg-guide-description {
+            font-size: 1.15em; /* Slightly larger description text relative to base 14px */
+            color: #666; /* Softer gray for description */
+            max-width: 900px; /* Limit width for readability on wide screens */
+            line-height: 1.5;
+        }
+
+        /* Breadcrumbs - subtle and clear */
+        #s-lib-bc {
+            font-size: 0.9em; /* Relative to 14px body font size */
+            padding-bottom: 20px; /* More space below breadcrumbs */
+            color: #888;
+            width: 100%; /* Ensure breadcrumbs take full width */
+        }
+        #s-lib-bc .breadcrumb > li + li::before {
+            padding: 0 10px;
+            color: #ccc;
+            content: "›"; /* Modern angle bracket separator */
+            font-weight: 600;
+        }
+        #s-lib-bc .breadcrumb a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        #s-lib-bc .breadcrumb a:hover {
+            color: var(--brand-primary-color); /* Use your brand color on hover */
+            text-decoration: underline;
+        }
+
+        /* Search bar - position and style for a modern look */
+        /* Removed `display: none;` for #s-lg-guide-header-search to allow modernization */
+        #s-lg-guide-header .pull-right {
+            position: absolute; /* Position independently from flow */
+            top: 40px;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px; /* Space between search and admin bar */
+        }
+
+        #s-lg-guide-header-search {
+            width: 280px; /* Fixed width for the search bar */
+        }
+        #s-lg-guide-header-search .form-control {
+            border-radius: 25px; /* Pill-shaped search input */
+            border: 1px solid #e0e0e0; /* Light border */
+            padding: 10px 20px; /* More padding inside input */
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.03); /* Very subtle inner shadow */
+            transition: all 0.3s ease;
+            font-size: 0.95em; /* Relative to 14px body font size */
+        }
+        #s-lg-guide-header-search .form-control:focus {
+            border-color: var(--brand-primary-color); /* Highlight border on focus */
+            box-shadow: 0 0 0 3px rgba(var(--brand-primary-color-rgb), 0.2); /* Subtle glow */
+            outline: none;
+        }
+        #s-lg-guide-header-search .input-group-btn .btn {
+            border-radius: 25px; /* Match pill shape */
+            background-color: var(--brand-primary-color); /* Your brand color for the button */
+            border-color: var(--brand-primary-color);
+            color: #fff;
+            padding: 10px 18px;
+            transition: all 0.3s ease;
+            font-size: 0.95em; /* Relative to 14px body font size */
+        }
+        #s-lg-guide-header-search .input-group-btn .btn:hover {
+            background-color: var(--brand-primary-color-dark); /* Darker shade on hover */
+            border-color: var(--brand-primary-color-dark);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Branding for global search as per your CSS */
+        #globalsearch {
+            background: var(--uri-light-blue); /* Your specific blue for global search */
+        }
+
+        /*
+         * Side Navigation Tabs
+         * Redesigns the 'nav-pills' for a cleaner, more intuitive look.
+         */
+        #s-lg-side-nav-content .col-md-3 {
+            padding-right: 15px; /* Default Bootstrap gutter */
+        }
+
+        #s-lg-tabs-container {
+            padding: 20px 0; /* Internal padding for the container */
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        #s-lg-guide-tabs ul.nav-pills {
+            padding: 0 15px; /* Padding for the list itself */
+        }
+
+        #s-lg-guide-tabs ul.nav-pills > li > a {
+            color: #555;
+            padding: 14px 20px; /* More padding for larger clickable area */
+            margin-bottom: 8px; /* Space between nav items */
+            border-radius: 8px; /* Slightly rounded for individual pills */
+            transition: all 0.3s ease; /* Smooth transition for hovers */
+            font-weight: 500; /* Medium font weight */
+            display: block; /* Make the whole area clickable */
+        }
+
+        #s-lg-guide-tabs ul.nav-pills > li > a:hover {
+            background-color: #f5f5f5; /* Light hover background */
+            color: #333;
+        }
+
+        #s-lg-guide-tabs ul.nav-pills > li.active > a,
+        #s-lg-guide-tabs ul.nav-pills > li.active > a:hover,
+        #s-lg-guide-tabs ul.nav-pills > li.active > a:focus {
+            background-color: var(--brand-primary-color); /* Your branding color for active state */
+            color: #fff;
+            font-weight: 600; /* Bolder for active state */
+            box-shadow: 0 3px 10px rgba(var(--brand-primary-color-rgb), 0.3); /* Subtle shadow for active tab */
+        }
+
+        /* Side navigation boxes (e.g., profile box, contact box) */
+        .s-lg-box {
+            background-color: #ffffff;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            margin-top: 25px; /* Space between boxes and nav */
+            padding: 25px;
+        }
+        .s-lg-box .s-lg-box-title {
+            font-size: 16px; /* Retain your specified font size */
+            color: var(--uri-dark-blue);
+            border-bottom: 1px solid #eee; /* Light separator */
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+        .s-lg-box .s-lg-box-content {
+            color: #555;
+            font-size: 0.95em; /* Relative to 14px body font size */
+        }
+
+        /*
+         * Main Content Area
+         * Ensures content is easy to read and well-structured.
+         */
+        .s-lg-tab-content {
+            min-height: 600px; /* Ensure content area has a minimum height */
+            padding: 30px; /* Generous internal padding for content */
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        /* General content styles for readability */
+        .s-lg-tab-content h2, .s-lg-tab-content h3, .s-lg-tab-content h4 {
+            font-family: 'Lato', 'Hind', Arial, sans-serif; /* Use Lato for headings */
+            color: var(--uri-dark-blue);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .s-lg-tab-content h2 { font-size: 2em; }
+        .s-lg-tab-content h3 { font-size: 1.6em; }
+        .s-lg-tab-content h4 { font-size: 1.3em; }
+
+        .s-lg-tab-content p {
+            line-height: 1.7;
+            margin-bottom: 1.2em;
+            color: #444;
+        }
+        .s-lg-tab-content ul, .s-lg-tab-content ol {
+            padding-left: 30px; /* More indent for lists */
+            margin-bottom: 1.5em;
+        }
+        .s-lg-tab-content li {
+            margin-bottom: 0.5em;
+            color: #444;
+        }
+        .s-lg-tab-content a {
+            color: var(--brand-primary-color); /* Branding color for links */
+            text-decoration: none;
+            transition: color 0.2s ease, text-decoration 0.2s ease;
+        }
+        .s-lg-tab-content a:hover {
+            color: var(--brand-primary-color-dark);
+            text-decoration: underline;
+        }
+
+        /* Previous/Next Links - styled as clear navigation buttons */
+        #page_prev_next_links {
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+        #page_prev_next_links a {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            color: var(--brand-primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        #page_prev_next_links a:hover {
+            background-color: #f5f5f5;
+            border-color: var(--brand-primary-color);
+            color: var(--brand-primary-color-dark);
+        }
+        #page_prev_next_links a .fa {
+            margin: 0 8px; /* Space around icons */
+        }
+
+        /*
+         * Branding for Global Banner and Identity
+         * Retains your specific background images and positioning.
+         */
+        #globalbanner-wrapper {
+            background-color: var(--uri-dark-blue);
+            background-image: url("https://www.uri.edu/wp-content/themes/uri-modern/images/campus-screen.jpg");
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: auto 500px; /* Retain original size */
+            color: #fff;
+            padding-left: 25px;
+            box-sizing: border-box;
+        }
+
+        #identity {
+            background-image: url("https://www.uri.edu/wp-content/themes/uri-modern/images/logo-inline-white.png");
+            background-position: center left;
+            background-repeat: no-repeat;
+            background-size: 180px auto; /* Retain original size */
+        }
+        @media all and (min-width: 370px) {
+            #identity { background-size: 220px auto; }
+        }
+        @media all and (min-width: 420px) {
+            #identity { background-size: 275px auto; }
+        }
+
+        /*
+         * Action Bar Branding
+         * Retains your specific icons and hover effects.
+         */
+        #actionbar-wrapper {
+            font-size: 20px; /* Retain your specified font size */
+            background:#fff;
+            border-top:1px solid #ddd;
+            transition:all .2s ease-in-out;
+        }
+        #actionbar a {
+            color: var(--uri-action-blue); /* Your specific action blue */
+            font-size: 22px; /* Retain your specified font size */
+        }
+        #actionbar a:hover {
+            color:#fff;
+            background:linear-gradient(-135deg, var(--uri-gradient-blue-1), var(--uri-gradient-blue-2));
+        }
+        #actionbar a span {
+            background-image: url("https://www.uri.edu/wp-content/themes/uri-modern/images/actionbar-sprite.png");
+            background-repeat: no-repeat;
+            background-size: 24px auto;
+        }
+        /* Action bar icon positions as per your CSS */
+        #actionbar #action-apply span { background-position:center 0; }
+        #actionbar #action-tour span { background-position:center -48px; }
+        #actionbar #action-give span { background-position:center -96px; }
+        #actionbar #action-apply:hover span { background-position:center -24px; }
+        #actionbar #action-tour:hover span { background-position:center -72px; }
+        #actionbar #action-give:hover span { background-position:center -120px; }
+
+        /*
+         * Footer Styling
+         * Creates a clean, informative footer with good contrast, retaining branding.
+         */
+        #globalfooter {
+            font-family: 'Hind', Arial, sans-serif; /* Use Hind for footer */
+            font-size: 20px; /* Retain your specified font size */
+            background-color: var(--uri-dark-blue); /* Your specific dark blue */
+            background-image: url("https://www.uri.edu/wp-content/themes/uri-modern/images/campus-screen.jpg");
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: auto 100%; /* Retain original size */
+            color: #e0e0e0; /* Light text color for contrast */
+            padding: 30px 0; /* Adjust padding for modern look */
+            margin-top: 40px; /* Space above footer */
+            border-radius: 12px; /* Match main container radius */
+            box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.08);
+            border: none;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        #s-lib-footer-public { /* Apply modern styling to the inner footer container */
+            background-color: transparent; /* Ensure no conflicting background */
+            box-shadow: none;
+            padding: 0 30px; /* Adjust padding for internal content */
+            border-radius: 0;
+            margin-bottom: 0;
+        }
+
+        #s-lib-footer-public a {
+            color: #99ccff; /* Lighter blue for links in footer */
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        #s-lib-footer-public a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        #s-lg-guide-header-meta {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+            margin-bottom: 15px;
+        }
+
+        #s-lg-guide-header-attributes li {
+            display: inline-block;
+            margin-right: 20px;
+            padding-right: 20px;
+            border-right: 1px solid rgba(255, 255, 255, 0.2); /* Subtle separator */
+            font-size: 0.95em;
+        }
+        #s-lg-guide-header-attributes li:last-child {
+            border-right: none;
+            margin-right: 0;
+            padding-right: 0;
+        }
+
+        #s-lib-footer-login-link,
+        #s-lib-footer-support-link {
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+
+        #s-lg-guide-header-subjects,
+        #s-lg-guide-header-tags {
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+        #s-lg-guide-header-subjects .s-lg-h-separator,
+        #s-lg-guide-header-tags .s-lg-h-separator {
+            display: inline-block;
+            margin-right: 8px;
+            margin-bottom: 8px; /* For multiple tags/subjects */
+            padding: 5px 10px;
+            background-color: #4a627a; /* Slightly lighter dark background for tags */
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        /* Storage bins branding */
+        #storagebins {
+            background: rgba(0,0,0,0.5); /* Retain original background */
+        }
+        #storagebins div:not(:first-child) {
+            border-left: 2px solid rgba(34,90,154,0.6); /* Retain original border */
+        }
+        #storagebins input:checked ~ label {
+            background: var(--uri-accent-blue); /* Your specific accent blue */
+        }
+        #storagebins a {
+            color: var(--uri-dark-blue); /* Your specific dark blue */
+        }
+        @media all and (min-width: 900px) {
+            #storagebins { background: none; } /* Remove background on larger screens */
+            #storagebins a { color: #fff; } /* White links on larger screens */
+        }
+
+        /* Gimmicks branding */
+        #gimmicks {
+            background: rgba(34,90,154,0.6); /* Your specific light blue with transparency */
+        }
+        #gimmicks hr {
+            background: rgba(255,255,255,0.5); /* Retain original background */
+        }
+        @media all and (min-width: 900px) {
+            #gimmicks { background: none; } /* Remove background on larger screens */
+        }
+
+        /* Tagline branding */
+        #tagline {
+            background: linear-gradient(to right, #30557e 10%, var(--uri-tagline-light-blue) 30%, #30557e); /* Retain original gradient */
+        }
+        #tagline:after {
+            background-image: url("https://www.uri.edu/wp-content/themes/uri-modern/images/tagline.png"); /* Retain original image */
+        }
+
+        /* Legal section branding */
+        #legal p {
+            color: rgba(255,255,255,0.5); /* Retain original color */
+        }
+        #legal a.jobs {
+            color: #fff; /* Retain original color */
+        }
+
+        /* Social media icons branding */
+        .cl-social a {
+            background-image: url(https://www.uri.edu/wp-content/plugins/uri-component-library/i/sprite-social.png); /* Retain original sprite */
+        }
+        /* Specific social icon positions as per your CSS */
+        .cl-social.color a.cl-social-facebook { background-position:0 0; }
+        .cl-social.color a.cl-social-instagram { background-position:0 -15px; }
+        .cl-social.color a.cl-social-twitter { background-position:0 -30px; }
+        .cl-social.color a.cl-social-linkedin { background-position:0 -45px; }
+        .cl-social.color a.cl-social-youtube { background-position:0 -60px; }
+        .cl-social.color a.cl-social-snapchat { background-position:0 -75px; }
+        .cl-social.dark a.cl-social-facebook { background-position:-20px 0; }
+        .cl-social.dark a.cl-social-instagram { background-position:-20px -15px; }
+        .cl-social.dark a.cl-social-twitter { background-position:-20px -30px; }
+        .cl-social.dark a.cl-social-linkedin { background-position:-20px -45px; }
+        .cl-social.dark a.cl-social-youtube { background-position:-20px -60px; }
+        .cl-social.dark a.cl-social-snapchat { background-position:-20px -75px; }
+        .cl-social.light a.cl-social-facebook { background-position:-40px 0; }
+        .cl-social.light a.cl-social-instagram { background-position:-40px -15px; }
+        .cl-social.light a.cl-social-twitter { background-position:-40px -30px; }
+        .cl-social.light a.cl-social-linkedin { background-position:-40px -45px; }
+        .cl-social.light a.cl-social-youtube { background-position:-40px -60px; }
+        .cl-social.light a.cl-social-snapchat { background-position:-40px -75px; }
+
+        /*
+         * Scroll to Top Button
+         * Modern, circular button with a clear icon.
+         */
+        #s-lib-scroll-top {
+            position: fixed;
+            bottom: 30px; /* Slightly higher from the bottom */
+            right: 30px; /* Slightly further from the right */
+            z-index: 1000;
+        }
+        #s-lib-scroll-top a {
+            background-color: var(--brand-primary-color); /* Your brand color */
+            color: #fff;
+            border-radius: 50%; /* Circular button */
+            width: 55px; /* Slightly larger button */
+            height: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25); /* More prominent shadow */
+            transition: all 0.3s ease;
+            text-decoration: none; /* Remove underline */
+        }
+        #s-lib-scroll-top a:hover {
+            background-color: var(--brand-primary-color-dark); /* Darker shade on hover */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+        #s-lib-scroll-top .fa-stack-2x {
+            color: transparent; /* Hide the square outline */
+        }
+        #s-lib-scroll-top .fa-angle-double-up {
+            font-size: 1.8em; /* Larger arrow icon */
+            position: relative;
+            bottom: 0; /* Center the icon */
+        }
+
+        /*
+         * Responsive Adjustments (using Bootstrap's grid breakpoints)
+         */
+        @media (max-width: 991px) { /* Medium devices (tablets) */
+            #s-lg-guide-header {
+                flex-direction: column; /* Stack header elements */
+                align-items: center; /* Center align items */
+                text-align: center;
+                padding: 30px 20px;
+            }
+            #s-lg-guide-header .pull-right {
+                position: static; /* Remove absolute positioning */
+                margin-top: 20px; /* Add space below header info */
+                display: flex;
+                flex-direction: column; /* Stack search and admin bar */
+                width: 100%;
+                align-items: center;
+                gap: 10px;
+            }
+            #s-lg-guide-header-search {
+                width: 100%; /* Full width search bar */
+                max-width: 350px; /* Max width for readability */
+            }
+            #s-lg-guide-header h1#s-lg-guide-name {
+                font-size: 2.2em;
+            }
+            #s-lg-guide-desc-container #s-lg-guide-description {
+                font-size: 1em;
+            }
+
+            .container {
+                padding: 20px;
+                border-radius: 8px; /* Slightly less rounded on smaller screens */
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            }
+
+            #s-lg-side-nav-content .col-md-3,
+            #s-lg-side-nav-content .col-md-9 {
+                width: 100%; /* Stack columns on smaller screens */
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            #s-lg-tabs-container {
+                margin-bottom: 25px; /* Space between side nav and main content when stacked */
+            }
+            #page_prev_next_links {
+                flex-direction: column; /* Stack prev/next links */
+                gap: 10px;
+            }
+            #page_prev_next_links a {
+                width: 100%; /* Full width buttons */
+                justify-content: center; /* Center text in buttons */
+            }
+        }
+
+        @media (max-width: 767px) { /* Small devices (phones) */
+            #s-lg-guide-header h1#s-lg-guide-name {
+                font-size: 1.8em;
+            }
+            #s-lg-guide-header-search .form-control,
+            #s-lg-guide-header-search .input-group-btn .btn {
+                padding: 8px 15px; /* Smaller padding for inputs/buttons */
+            }
+            #s-lg-guide-tabs ul.nav-pills > li > a {
+                padding: 10px 15px; /* Smaller padding for nav items */
+                font-size: 0.9em;
+            }
+            .s-lg-tab-content {
+                padding: 20px;
+            }
+            .s-lg-tab-content h2 { font-size: 1.6em; }
+            .s-lg-tab-content h3 { font-size: 1.3em; }
+            .s-lg-tab-content h4 { font-size: 1.1em; }
+
+            #globalfooter {
+                padding: 20px;
+            }
+            #s-lg-guide-header-attributes li {
+                display: block; /* Stack footer attributes */
+                border-right: none;
+                margin-right: 0;
+                padding-right: 0;
+                margin-bottom: 5px;
+            }
+            #s-lg-guide-header-meta {
+                text-align: center;
+            }
+            #s-lib-footer-login-link,
+            #s-lib-footer-support-link {
+                float: none !important; /* Remove float */
+                text-align: center;
+                margin-top: 10px;
+            }
+            #s-lg-guide-header-subjects,
+            #s-lg-guide-header-tags {
+                float: none !important; /* Remove float */
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+
+        /* Styles from your original custom CSS that are not directly overridden or merged */
+        #identity-print { display: none; }
+        .skip-link { position: absolute; left: -9999px; }
+        #globalbanner { font-size: .9rem; }
+        #globalbanner:after { content:''; display:block; clear:both; }
+        #identity { width:0; height:40px; padding-left:180px; overflow:hidden; float:left; }
+        @media all and (min-width: 370px) { #identity { padding-left:220px; } #gateways-label { padding:0 1rem; } #gateways-label span { padding-right:1.1rem; } #gateways-label span:after { right:.8rem; } }
+        @media all and (min-width: 420px) { #identity { padding-left:300px; } }
+        @media all and (min-width: 800px) { #globalbanner { max-width:1000px; } }
+        @media all and (min-width: 1050px) { #globalbanner-wrapper { padding-left:0; } #globalbanner { margin:0 auto; } }
+        @media print { #globalsearch,#globalbanner-wrapper,#localnav { display:none; } #identity-print { display:block; } }
+        @supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)) { .globalnav #globalnav-menu { background:rgba(255,255,255,0.8); -webkit-backdrop-filter:blur(10px) saturate(250%); backdrop-filter:blur(10px) saturate(250%); } }
+
+        #actionbar { display:flex; padding:0; margin:0 auto; box-sizing:border-box; transition:all .2s ease-in-out; }
+        #actionbar a { display:block; flex:1; height:120px; text-align:center; transition:none; }
+        #actionbar a span { display:block; position:relative; margin-top:40px; margin-bottom:16px; width:100%; height:24px; }
+        @media all and (min-width: 900px) { #actionbar a { height:150px; } #actionbar a span { margin-top:40px; } }
+        @media all and (min-width: 1050px) { #actionbar { width:1000px; padding:0; } }
+        @media print { #actionbar-wrapper { display:none; } }
+
+        #basement { width: 100%; margin:0 auto; box-sizing:border-box; transition:all .2s ease-in-out; padding:0 25px; color:#fff; }
+        #basement:after { display:block; content:''; clear:both; }
+        #storagebins { text-align:center; font-size:14.4px; width:100vw; position:relative; left:50%; margin-left:-50vw; }
+        #storagebins:after { content:''; display:block; clear:both; }
+        #storagebins div { float:left; width:33.33%; box-sizing:border-box; }
+        #storagebins input { display:none; }
+        #storagebins label { text-transform:uppercase; font-weight:600; display:block; width:100%; height:60px; line-height:60px; padding-bottom:5px; }
+        #storagebins label span:after { content:''; display:block; position:relative; top:-15px; left:calc(50% - 6px); width:0; height:0; border-top:6px solid #fff; border-left:6px solid transparent; border-right:6px solid transparent; transform:rotate(0); transition:transform 0.2s cubic-bezier(0.77, 0, 0.175, 1); }
+        #storagebins label:hover,#storagebins label:focus { cursor:pointer; }
+        #storagebins ul { margin:0; padding:16px 0 8px; list-style:none; display:none; background:#fff; width:100vw; position:relative; }
+        #storagebins li { max-width:100%; }
+        #storagebins #sb-university ul { margin-left:0; left:0; }
+        #storagebins #sb-campus-life ul { margin-left:50%; left:-50vw; }
+        #storagebins #sb-academics ul { margin-left:100%; left:-100vw; }
+        #storagebins input:checked ~ ul { display:block; }
+        #storagebins a { text-decoration:none; }
+        #storagebins a:hover,#storagebins a:focus { text-decoration:underline; }
+
+        #gimmicks hr { margin:0; }
+        #gimmicks .cl-social { padding:18px 0 15px; margin:0; display:block; }
+        #gimmicks .cl-social li:not(:first-child) { margin-left:18%; }
+        #tagline { position:relative; display:block; width:100%; height:1px; margin:80px auto 60px; transition:all .2s ease-in-out; }
+        #tagline:after { content:''; display:block; position:absolute; top:-39px; left:0; width:100%; height:100px; background-position:center top; background-repeat:no-repeat; background-size:200px auto; }
+        #legal { position:relative; z-index:10; width:300px; margin:0 auto; font-size:11.2px; box-sizing:border-box; }
+        #legal p { max-width:100%; padding:0; margin:0; text-align:center; line-height:1.3; }
+        #legal a { text-decoration:none; }
+        #legal a.subtle { color:inherit; }
+        #legal a:hover,#legal a:focus { text-decoration:underline; }
+
+        @media all and (min-width: 900px) {
+            #globalfooter { padding:35px 0; background-size:auto 500px; }
+            #storagebins { float:left; text-align:left; display:block; width:auto; left:0; margin-left:0; }
+            #storagebins div { display:inline-block; float:none; width:auto; }
+            #storagebins div:not(:first-child) { margin-left:48px; border-left:none; }
+            #storagebins label { padding:0; width:auto; height:auto; line-height:1; padding-bottom:0; }
+            #storagebins label span:after { display:none; }
+            #storagebins label:hover,#storagebins label:focus { cursor:default; }
+            #storagebins input:checked ~ label { background:none; }
+            #storagebins ul { display:block; background:none; padding:19.2px 0 16px; width:auto; }
+            #storagebins #sb-university ul,#storagebins #sb-campus-life ul,#storagebins #sb-academics ul { margin-left:0; left:0; }
+            #gimmicks { float:right; text-align:initial; padding:0; left:0; margin-left:0; width:auto; }
+            #gimmicks:after { display:block; content:''; clear:both; }
+            #gimmicks>* { float:left; }
+            #gimmicks hr { display:none; }
+            #gimmicks .uri-tides-widget { margin:0; }
+            #gimmicks .uri-tides-widget .label { font-size:14.4px; }
+            #gimmicks .cl-social { margin-left:48px; padding:0; border-top:none; }
+            #gimmicks .cl-social li:not(:first-child) { margin-left:10px; }
+            #legal { width:100%; font-size:12.8px; margin-top:8px; padding:0 25px; }
+            #legal p { text-align:left; }
+            #legal a.jobs { color:#fff; }
+            #tagline { background:linear-gradient(to right, #30557e 50%, var(--uri-tagline-light-blue) 70%, #30557e); margin:60px auto 0; }
+            #tagline:after { background-position:right 25px top; }
+        }
+        @media all and (min-width: 1050px) {
+            #basement,#legal,#tagline,#tagline:after { width:1000px; padding:0; }
+            #tagline:after { background-position:right top; }
+        }
+        @media print {
+            #globalfooter { background:none; padding:0; }
+            #basement,#tagline { display:none; }
+            #legal { width:100%; margin:0; padding-top:20px; border-top:1px solid #ddd; }
+            #legal p { color:#000; text-align:left; }
+            #legal a.jobs { display:none; }
+        }
+
+        #sitebanner { position:relative; margin-bottom:1px; z-index:10; }
+        #sitebanner.light #siteidentity h1,#sitebanner.light #siteidentity h2 { color:#fff; }
+        #sitebanner.light #sb-screen { display:block; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.15); }
+        #sb-backdrop { width:100%; height:100%; position:absolute; top:0; left:0; }
+        #sb-background-image { display:block; width:100%; height:100%; position:absolute; top:0; left:0; background-color:#fff; background-position:center center; background-size:cover; }
+        #sb-screen { display:none; }
+        #sitebranding { position:relative; width:100%; margin:0 auto; padding:32px 25px; color:var(--uri-dark-blue); box-sizing:border-box; transition:all .2s ease-in-out; z-index:2; }
+        #siteidentity h1 { font-family:"Lato","Hind",Arial,sans-serif; font-weight: 700; margin:0; max-width:100%; font-size:28px; color:#fff; }
+        #siteidentity h1 a,#siteidentity h1 a:visited { color:inherit; }
+        #siteidentity h2 { font-size:20.8px; font-weight:400; color:#000; padding-top:8px; margin:0; }
+        #sitesocial ul { font-size:initial; margin-top:16px; padding-left: 0; }
+        @media all and (min-width: 600px) { #sitebranding { display:flex; align-items:flex-end; justify-content:space-between; } #sitesocial ul { margin:0; } }
+        @media all and (min-width: 800px) { #sitebanner { margin-bottom:0; } }
+        @media all and (min-width: 1050px) { #sitebranding { width:1000px; padding:35.2px 0; font-size:32px; } }
+        @media print { #sb-backdrop,#sitesocial { display:none; } #siteheader { margin-bottom:48px; } #sitebranding { width:100%; margin:0; } #sitebanner #siteidentity h1,#sitebanner #siteidentity h2,#sitebanner.light #siteidentity h1,#sitebanner.light #siteidentity h2 { color:#000; } #sitebanner { border-bottom:1px solid #ddd; } }
+
+        .cl-social { display:inline-block; list-style:none; margin:0; }
+        .cl-social li { display:inline-block; margin:0; padding:0; }
+        .cl-social li:not(:first-child) { margin-left:10px; }
+        .cl-social a { position:relative; top:0; display:block; width:0; height:0; overflow:hidden; padding-left:20px; padding-bottom:15px; background-repeat:no-repeat; background-size:60px auto; transition:top .1s ease-in-out; }
+        .cl-social a:hover { top:-1px; }
+
+    </style>
+</head>
+<body class="s-lg-guide-body">
+    {{skip_link}}
+
+    {{ADMIN_CMD_BAR}}
+
+    {{public_header}}
+
+
+    <div id="s-lg-guide-header" class="container s-lib-header s-lib-side-borders">
+        <nav id="s-lib-bc" aria-label="breadcrumb">
+            {{breadcrumbs}}
+        </nav>
+        <div class="pull-right">
+            <div id="s-lg-guide-header-search">
+                {{guide_search}}
+            </div>
+            {{ADMIN_MINI_CMD_BAR}}
+        </div>
+        <div id="s-lg-guide-header-info">
+            <h1 id="s-lg-guide-name">{{guide_title}}</h1>
+            <div id="s-lg-guide-desc-container">
+                <span id="s-lg-guide-description">{{guide_description}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="s-lg-guide-tabs-title-bar" class="container s-lib-side-borders"></div>
+
+    <div id="s-lg-side-nav-content" class="container s-lib-side-borders pad-top-med">
+        <div class="row">
+            <div class="col-md-3 s-lg-tabs-side pad-bottom-med">
+                <div id="s-lg-tabs-container">
+                    <div id="s-lg-guide-tabs" role="navigation" aria-label="Guide Pages">
+                        <ul class="nav nav-pills nav-stacked split-button-nav">
+                            {{guide_nav}}
+                        </ul>
+                        {{side_nav_boxes}}
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="s-lg-tab-content">
+                    <div id="s-lg-guide-main" class="tab-pane active" tabindex="-1">
+                        {{content}}
+                    </div>
+                </div>
+                {{page_prev_next_links}}
+            </div>
+        </div>
+    </div>
+
+    <div id="s-lib-footer-public" class="s-lib-footer footer container s-lib-side-borders">
+        <div id="s-lg-guide-header-meta" class="pad-top-sm pad-left-med clearfix">
+            <ul id="s-lg-guide-header-attributes">
+                <li id="s-lg-guide-header-updated" class="s-lg-h-separator">
+                    {{last_updated_display}}
+                </li>
+                <li id="s-lg-guide-header-url" class="s-lg-h-separator">
+                    {{guide_url_display}}
+                </li>
+                <li id="s-lg-guide-print-url">
+                    {{print_url_display}}
+                </li>
+            </ul>
+
+            <div id="s-lib-footer-login-link" class="pull-right pad-right-med">
+                {{login_url_display}}
+            </div>
+        </div>
+        <div class="pad-bottom-sm clearfix">
+            <div id="s-lib-footer-support-link" class="pull-right pad-right-med">
+                <a href="mailto:amanda@uri.edu">Report a problem</a>
+            </div>
+            <div id="s-lg-guide-header-subjects" class="pad-top-sm pad-left-med pad-right-med pull-left">
+                {{guide_subjects}}
+            </div>
+            <div id="s-lg-guide-header-tags" class="pad-top-sm pad-left-med">
+                {{guide_tags}}
+            </div>
+        </div>
+    </div>
+
+    <!-- scroll_top.twig -->
+    <div id="s-lib-scroll-top">
+        <a href="javascript:void(0);" onclick="jQuery('body').focus();" title="Back to Top"
+           aria-label="Back to Top">
+            <span class="fa-stack fa-lg" aria-hidden="true">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-angle-double-up fa-stack-1x" style="position:relative; bottom:2px;"></i>
+            </span>
+        </a>
+    </div>
+    <!-- !scroll_top.twig -->
+
+    <div id="s-lib-alert" title=""><div id="s-lib-alert-content"></div></div>
+
+    {{public_footer}}
+
+    <!-- Place this div in your web page where you want your chat widget to appear. -->
+    <div class="needs-js"></div>
+
+    <!-- Place this script as near to the end of your BODY as possible. -->
+    <script type="text/javascript">
+        (function() {
+            var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+            x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.com/js/libraryh3lp.js?13442";
+            var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+        })();
+
+        $(document).ready(function() {
+            $('<div id="s-lg-creative-commons" class="container s-lib-side-borders" style="text-align: center !important; padding: 10px 0 !important; margin-top: 20px !important; font-size: 14px !important; display: block !important; font-weight: bold !important;"><p style="margin: 0 !important;">This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: #0000FF !important; text-decoration: underline !important;">Creative Commons Attribution 4.0 International License</a>.</p></div>')
+                .insertBefore('#s-lib-footer-public');
+        });
+    </script>
+</body>
+</html>
