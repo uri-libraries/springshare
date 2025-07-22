@@ -1,0 +1,48 @@
+<style type="text/css">@media (min-width: 768px) and (max-width: 1024px) {
+    .tablet-stack {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .tablet-stack > div {
+        width: 100% !important;
+        max-width: none !important;
+    }
+    .text-first {
+        order: 1 !important;
+        text-align: center !important;
+    }
+    .image-second {
+        order: 2 !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .tablet-stack {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    .tablet-stack > div {
+        width: 100% !important;
+        max-width: none !important;
+    }
+    .text-first {
+        order: 1 !important;
+    }
+    .image-second {
+        order: 2 !important;
+    }
+}
+</style>
+<div class="tablet-stack" style="display: flex; align-items: flex-start; justify-content: center; gap: 20px; margin: 0 auto; flex-wrap: wrap;">
+<div class="image-second" style="flex-shrink: 0;"><img alt="Carothers library" loading="lazy" src="https://d2jv02qf7xgjwx.cloudfront.net/accounts/438824/images/484519582_1050061080484057_4739049630000655878_n.jpg" style="width: 380px; height: 210px; object-fit: cover;" /></div>
+
+<div class="text-first" style="flex: 1; max-width: 600px; padding: 0 20px; min-width: 300px;">
+<h3 style="margin-top: 0;">Welcome</h3>
+
+<p>The University of Rhode Island Libraries have many tools to assist you with your work online. Below are some resources to help you get started.</p>
+</div>
+
+<div class="image-second" style="flex-shrink: 0;"><img alt="Pell library" loading="lazy" src="https://d2jv02qf7xgjwx.cloudfront.net/accounts/438824/images/pell.jpg" style="width: 380px; height: 210px; object-fit: cover;" /></div>
+</div>
