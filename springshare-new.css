@@ -1081,7 +1081,6 @@ body.homepage .s-lib-box .s-lib-box-content {
   font-size: 1rem;
 }
 
-</style>
 
 /* URI branded tab styling for LibGuides tabbed boxes */
 .nav-tabs > li.active > a,
@@ -1105,3 +1104,27 @@ body.homepage .s-lib-box .s-lib-box-content {
   background-color: #e5e7eb !important;
   color: #002147 !important;
 }
+
+/* URI blue prev/next navigation buttons (specific to .previous and .next) */
+li.previous a, li.next a,
+li.previous button, li.next button {
+  background-color: #002147 !important; /* URI blue */
+  color: #fff !important;               /* White text */
+  font-weight: bold !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 10px 22px !important;
+  text-decoration: none !important;
+  margin: 8px 4px !important;
+  display: inline-block !important;
+  transition: background 0.2s, color 0.2s;
+}
+
+li.previous a:hover, li.next a:hover,
+li.previous button:hover, li.next button:hover {
+  background-color: #0046a0 !important; /* Slightly lighter blue on hover */
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+</style>
