@@ -1082,3 +1082,26 @@ body.homepage .s-lib-box .s-lib-box-content {
 }
 
 </style>
+
+/* URI branded tab styling for LibGuides tabbed boxes */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #002147 !important;   /* URI blue */
+  color: #fff !important;                 /* White text */
+  border-color: #002147 !important;
+  font-weight: 600;
+}
+
+.nav-tabs > li > a {
+  background-color: #f9fafb !important;   /* Unselected tab background */
+  color: #002147 !important;              /* URI blue text */
+  border-color: #e5e7eb !important;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-tabs > li > a:hover {
+  background-color: #e5e7eb !important;
+  color: #002147 !important;
+}
