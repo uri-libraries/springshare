@@ -1,18 +1,3 @@
-<script>
-    var springStats = springStats || {};
-    springStats.saConfig = springStats.saConfig || {
-        site_id: 1413,
-        tracking_parameters: {"_st_site_id":1413},
-        tracking_server_host: "libguides-proc.springyaws.com"
-    };
-</script>
-<script src="//lgapi-us.libapps.com//web/js/sa.min.js?3116"></script>
-<script>springshare_widget_config_1753901189549 = { path: 'assets', link_text: 'A-Z List' };</script>
-<!-- Added a wrapper div with Tailwind classes for better containment -->
-<div class="w-full overflow-hidden">
-    <div id="s-lg-widget-1753901189549"></div>
-</div>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://lgapi-us.libapps.com/widgets.php?site_id=1413&widget_type=2&search_terms=&search_match=2&search_type=1&subject_ids=&sort_by=name&list_format=2&drop_text=Select+a+Database...&output_format=1&load_type=2&enable_description=0&widget_title=A-Z+Database+List&widget_height=200&widget_width=100%25&widget_link_color=2954d1&widget_embed_type=1&num_results=0&enable_more_results=1&window_target=2&config_id=1753901189549";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","s-lg-widget-script-1753901189549");</script>
 <meta name="google-site-verification" content="Ozh587HeLEuKy4KdoWPpED7PQtNZP74Tx-i0ZMijIwE" />
 
 <style>
@@ -29,12 +14,12 @@ font-family: Hind, Arial, sans-serif;
 
 <style>
 #s-lg-guide-header-search {
-    display: none;
+    display: none;
 }
 </style>
 
 <style>
-/* set the font size across LibGuides  */
+/* set the font size across LibGuides  */
 body {
 font-size: 16px;
 }
@@ -48,151 +33,151 @@ font-size: 22px;
 
 /* Heading Hierarchy */
 h2, .s-lib-box-title h2 {
-  font-size: 22px !important;
-  font-weight: 600 !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
 }
 
 h3 {
-  font-size: 20px !important;
-  font-weight: 500 !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
 }
 
 h4 {
-  font-size: 18px !important;
-  font-weight: 500 !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
 }
 
 h5 {
-  font-size: 16px !important;
-  font-weight: 500 !important;
+  font-size: 16px !important;
+  font-weight: 500 !important;
 }
 </style>
 
 <style>
 #brandbar {
-    padding:0;
-    background:#fff;
-    position:relative;
-    z-index:9990;
-    margin-left: -15px;
-    margin-right: -15px;
+    padding:0;
+    background:#fff;
+    position:relative;
+    z-index:9990;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 #identity-print {
-    display:none
+    display:none
 }
 
 .skip-link {
-    position:absolute;
-    left:-9999px
+    position:absolute;
+    left:-9999px
 }
 
 #globalsearch {
-    position:relative;
-    width:100%;
-    background:#2277b3
+    position:relative;
+    width:100%;
+    background:#2277b3
 }
 
 #globalbanner-wrapper {
-    position:relative;
-    width:100%;
-    background-color:#002147;
-    background-image:url("https://www.uri.edu/wp-content/themes/uri-modern/images/campus-screen.jpg");
-    background-position:top center;
-    background-repeat:no-repeat;
-    background-size:auto 500px;
-    color:#fff;
-    padding-left:25px;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box
+    position:relative;
+    width:100%;
+    background-color:#002147;
+    background-image:url("https://www.uri.edu/wp-content/themes/uri-modern/images/campus-screen.jpg");
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:auto 500px;
+    color:#fff;
+    padding-left:25px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
 }
 
 #globalbanner {
-    position:relative;
-    width:100%;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    font-size:.9rem
+    position:relative;
+    width:100%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    font-size:.9rem
 }
 
 #globalbanner:after {
-    content:'';
-    display:block;
-    clear:both
+    content:'';
+    display:block;
+    clear:both
 }
 
 #identity {
-    width:0;
-    height:40px;
-    padding-left:180px;
-    overflow:hidden;
-    float:left;
-    background-image:url("https://www.uri.edu/wp-content/themes/uri-modern/images/logo-inline-white.png");
-    background-position:center left;
-    background-repeat:no-repeat;
-    background-size:180px auto
+    width:0;
+    height:40px;
+    padding-left:180px;
+    overflow:hidden;
+    float:left;
+    background-image:url("https://www.uri.edu/wp-content/themes/uri-modern/images/logo-inline-white.png");
+    background-position:center left;
+    background-repeat:no-repeat;
+    background-size:180px auto
 }
 
 @media all and (min-width: 370px) {
-        #identity {
-        padding-left:220px;
-        background-size:220px auto
-        }
+        #identity {
+        padding-left:220px;
+        background-size:220px auto
+        }
 
-        #gateways-label {
-            padding:0 1rem
-        }
+        #gateways-label {
+            padding:0 1rem
+        }
 
-        #gateways-label span {
-            padding-right:1.1rem
-        }
+        #gateways-label span {
+            padding-right:1.1rem
+        }
 
-        #gateways-label span:after {
-            right:.8rem
-        }
+        #gateways-label span:after {
+            right:.8rem
+        }
 }
 
 @media all and (min-width: 420px) {
-        #identity {
-            padding-left:300px;
-            background-size:275px auto
-        }
+        #identity {
+            padding-left:300px;
+            background-size:275px auto
+        }
 }
 
 @media all and (min-width: 800px) {
-        #globalbanner {
-            max-width:1000px
-        }
+        #globalbanner {
+            max-width:1000px
+        }
 }
 
 @media all and (min-width: 1050px) {
-        #globalbanner-wrapper {
-            padding-left:0
-        }
+        #globalbanner-wrapper {
+            padding-left:0
+        }
 
-        #globalbanner {
-                margin:0 auto
-        }
+        #globalbanner {
+                margin:0 auto
+        }
 }
 
 @media print {
-        #globalsearch,#globalbanner-wrapper,#localnav {
-            display:none
-        }
+        #globalsearch,#globalbanner-wrapper,#localnav {
+            display:none
+        }
 
-        #identity-print {
-                display:block
-        }
+        #identity-print {
+                display:block
+        }
 }
 
 @supports ((-webkit-backdrop-filter: initial) or (backdrop-filter: initial)) {
-        .globalnav #globalnav-menu {
-            background:rgba(255,255,255,0.8);
-            -webkit-backdrop-filter:blur(10px) saturate(250%);
-            backdrop-filter:blur(10px) saturate(250%)
-        }
+        .globalnav #globalnav-menu {
+            background:rgba(255,255,255,0.8);
+            -webkit-backdrop-filter:blur(10px) saturate(250%);
+            backdrop-filter:blur(10px) saturate(250%)
+        }
 }
 </style>
 
@@ -202,648 +187,649 @@ font-size: 22px;
 }
 
 #actionbar-wrapper {
-    position:relative;
-    clear:both;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    background:#fff;
-    border-top:1px solid #ddd;
-    -webkit-transition:all .2s ease-in-out;
-    transition:all .2s ease-in-out;
-    margin: 0 -15px;
+    position:relative;
+    clear:both;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background:#fff;
+    border-top:1px solid #ddd;
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    margin: 0 -15px;
 width: auto;
 }
 
 #actionbar {
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-moz-box;
-    display:-ms-flexbox;
-    display:flex;
-    padding:0;
-    margin:0 auto;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    -webkit-transition:all .2s ease-in-out;
-    transition:all .2s ease-in-out
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:flex;
+    padding:0;
+    margin:0 auto;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out
 }
 #actionbar a {
-    display:block;
-    -webkit-box-flex:1;
-    -webkit-flex:1;
-    -moz-box-flex:1;
-    -ms-flex:1;
-    flex:1;
-    height:120px;
-    text-align:center;
-    color:#003b8d;
-    font-size:24px;
-    -webkit-transition:none;
-    transition:none
+    display:block;
+    -webkit-box-flex:1;
+    -webkit-flex:1;
+    -moz-box-flex:1;
+    -ms-flex:1;
+    flex:1;
+    height:120px;
+    text-align:center;
+    color:#003b8d;
+    font-size:24px;
+    -webkit-transition:none;
+    transition:none
 }
 #actionbar a:hover {
-    color:#fff;
-    background:linear-gradient(-135deg, #009DFF, #0900FF)
+    color:#fff;
+    background:linear-gradient(-135deg, #009DFF, #0900FF)
 }
 #actionbar a span {
-    display:block;
-    position:relative;
-    margin-top:40px;
-    margin-bottom:16px;
-    width:100%;
-    height:24px;
-    background-image:url("https://www.uri.edu/wp-content/themes/uri-modern/images/actionbar-sprite.png");
-    background-repeat:no-repeat;
-    background-size:24px auto
+    display:block;
+    position:relative;
+    margin-top:40px;
+    margin-bottom:16px;
+    width:100%;
+    height:24px;
+    background-image:url("https://www.uri.edu/wp-content/themes/uri-modern/images/actionbar-sprite.png");
+    background-repeat:no-repeat;
+    background-size:24px auto
 }
 #actionbar #action-apply span {
-    background-position:center 0
+    background-position:center 0
 }
 #actionbar #action-tour span {
-    background-position:center -48px
+    background-position:center -48px
 }
 #actionbar #action-give span {
-    background-position:center -96px
+    background-position:center -96px
 }
 #actionbar #action-apply:hover span {
-    background-position:center -24px
+    background-position:center -24px
 }
 #actionbar #action-tour:hover span {
-    background-position:center -72px
+    background-position:center -72px
 }
 #actionbar #action-give:hover span {
-    background-position:center -120px
+    background-position:center -120px
 }
 @media all and (min-width: 900px) {
-    #actionbar a {
-    height:150px
+    #actionbar a {
+    height:150px
 }
 #actionbar a span {
-    margin-top:40px
+    margin-top:40px
 }
 }
 @media all and (min-width: 1050px) {
-    #actionbar {
-    width:1000px;
-    padding:0
+    #actionbar {
+    width:1000px;
+    padding:0
 }
 }
 @media print {
-    #actionbar-wrapper {
-    display:none
+    #actionbar-wrapper {
+    display:none
 }
 }
 
 #basement {
-    width: 100%;
-    margin:0 auto;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    -webkit-transition:all .2s ease-in-out;
-    transition:all .2s ease-in-out;
-    padding:0 25px;
-    color:#fff
+    width: 100%;
+    margin:0 auto;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    padding:0 25px;
+    color:#fff
 }
 #basement:after {
-    display:block;
-    content:'';
-    clear:both
+    display:block;
+    content:'';
+    clear:both
 }
 #globalfooter {
-    display: block;
-    margin: 0 -15px;
-    position:relative;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    padding:0 0 30px;
-    overflow:hidden;
-    background-color:#002147;
-    background-image:url("https://www.uri.edu/wp-content/themes/uri-modern/images/campus-screen.jpg");
-    background-position:top center;
-    background-repeat:no-repeat;
-    background-size:auto 100%
+    display: block;
+    margin: 0 -15px;
+    position:relative;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0 0 30px;
+    overflow:hidden;
+    background-color:#002147;
+    background-image:url("https://www.uri.edu/wp-content/themes/uri-modern/images/campus-screen.jpg");
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:auto 100%
 }
 #storagebins {
-    text-align:center;
-    font-size:16px;
-    width:100vw;
-    position:relative;
-    left:50%;
-    margin-left:-50vw;
-    background:rgba(0,0,0,0.5)
+    text-align:center;
+    font-size:16px;
+    width:100vw;
+    position:relative;
+    left:50%;
+    margin-left:-50vw;
+    background:rgba(0,0,0,0.5)
 }
 #storagebins:after {
-    content:'';
-    display:block;
-    clear:both
+    content:'';
+    display:block;
+    clear:both
 }
 #storagebins div {
-    float:left;
-    width:33.33%;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box
+    float:left;
+    width:33.33%;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
 }
 #storagebins div:not(:first-child) {
-    border-left:2px solid rgba(34,90,154,0.6)
+    border-left:2px solid rgba(34,90,154,0.6)
 }
 #storagebins input {
-    display:none
+    display:none
 }
 #storagebins label {
-    text-transform:uppercase;
-    font-weight:600;
-    display:block;
-    width:100%;
-    height:60px;
-    line-height:60px;
-    padding-bottom:5px
+    text-transform:uppercase;
+    font-weight:600;
+    display:block;
+    width:100%;
+    height:60px;
+    line-height:60px;
+    padding-bottom:5px
 }
 #storagebins label span:after {
-    content:'';
-    display:block;
-    position:relative;
-    top:-15px;
-    left:calc(50% - 6px);
-    width:0;
-    height:0;
-    border-top:6px solid #fff;
-    border-left:6px solid transparent;
-    border-right:6px solid transparent;
-    -webkit-transform:rotate(0);
-    transform:rotate(0);
-    -webkit-transition:-webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
-    transition:-webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
-    transition:transform 0.2s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1)
+    content:'';
+    display:block;
+    position:relative;
+    top:-15px;
+    left:calc(50% - 6px);
+    width:0;
+    height:0;
+    border-top:6px solid #fff;
+    border-left:6px solid transparent;
+    border-right:6px solid transparent;
+    -webkit-transform:rotate(0);
+    transform:rotate(0);
+    -webkit-transition:-webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+    transition:-webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+    transition:transform 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+    transition:transform 0.2s cubic-bezier(0.77, 0, 0.175, 1), -webkit-transform 0.2s cubic-bezier(0.77, 0, 0.175, 1)
 }
 #storagebins label:hover,#storagebins label:focus {
-    cursor:pointer
+    cursor:pointer
 }
 #storagebins ul {
-    margin:0;
-    padding:16px 0 8px;
-    list-style:none;
-    display:none;
-    background:#fff;
-    width:100vw;
-    position:relative
+    margin:0;
+    padding:16px 0 8px;
+    list-style:none;
+    display:none;
+    background:#fff;
+    width:100vw;
+    position:relative
 }
 #storagebins li {
-    max-width:100%
+    max-width:100%
 }
 #storagebins #sb-university ul {
-    margin-left:0;
-    left:0
+    margin-left:0;
+    left:0
 }
 #storagebins #sb-campus-life ul {
-    margin-left:50%;
-    left:-50vw
+    margin-left:50%;
+    left:-50vw
 }
 #storagebins #sb-academics ul {
-    margin-left:100%;
-    left:-100vw
+    margin-left:100%;
+    left:-100vw
 }
 #storagebins input:checked ~ label {
-    background:#005eff
+    background:#005eff
 }
 #storagebins input:checked ~ ul {
-    display:block
+    display:block
 }
 #storagebins a {
-    color:#002147
+    color:#002147
 }
 #storagebins a:hover,#storagebins a:focus {
-    text-decoration:underline
+    text-decoration:underline
 }
 #gimmicks {
-    text-align:center;
-    background:rgba(34,90,154,0.6);
-    position:relative;
-    left:-50vw;
-    margin-left:50%;
-    width:100vw
+    text-align:center;
+    background:rgba(34,90,154,0.6);
+    position:relative;
+    left:-50vw;
+    margin-left:50%;
+    width:100vw
 }
 
 #gimmicks hr {
-    margin:0;
-    background:rgba(255,255,255,0.5)
+    margin:0;
+    background:rgba(255,255,255,0.5)
 }
 #gimmicks .cl-social {
-    padding:18px 0 15px;
-    margin:0;
-    display:block
+    padding:18px 0 15px;
+    margin:0;
+    display:block
 }
 #gimmicks .cl-social li:not(:first-child) {
-    margin-left:18%
+    margin-left:18%
 }
 #tagline {
-    position:relative;
-    display:block;
-    width:100%;
-    height:1px;
-    margin:80px auto 60px;
-    background:-webkit-gradient(linear, left top, right top, color-stop(10%, #30557e), color-stop(30%, #c0ddf2), to(#30557e));
-    background:linear-gradient(to right, #30557e 10%, #c0ddf2 30%, #30557e);
-    -webkit-transition:all .2s ease-in-out;
-    transition:all .2s ease-in-out
+    position:relative;
+    display:block;
+    width:100%;
+    height:1px;
+    margin:80px auto 60px;
+    background:-webkit-gradient(linear, left top, right top, color-stop(10%, #30557e), color-stop(30%, #c0ddf2), to(#30557e));
+    background:linear-gradient(to right, #30557e 10%, #c0ddf2 30%, #30557e);
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out
 }
 #tagline:after {
-    content:'';
-    display:block;
-    position:absolute;
-    top:-39px;
-    left:0;
-    width:100%;
-    height:100px;
-    background-image:url("https://www.uri.edu/wp-content/themes/uri-modern/images/tagline.png");
-    background-position:center top;
-    background-repeat:no-repeat;
-    background-size:200px auto
+    content:'';
+    display:block;
+    position:absolute;
+    top:-39px;
+    left:0;
+    width:100%;
+    height:100px;
+    background-image:url("https://www.uri.edu/wp-content/themes/uri-modern/images/tagline.png");
+    background-position:center top;
+    background-repeat:no-repeat;
+    background-size:200px auto
 }
 #legal {
-    position:relative;
-    z-index:10;
-    width:300px;
-    margin:0 auto;
-    font-size:16px;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    transtition:all .2s ease-in-out
+    position:relative;
+    z-index:10;
+    width:300px;
+    margin:0 auto;
+    font-size:16px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    transtition:all .2s ease-in-out
 }
 #legal p {
-    color:rgba(255,255,255,0.5);
-    max-width:100%;
-    padding:0;
-    margin:0;
-    text-align:center;
-    line-height:1.3
+    color:rgba(255,255,255,0.5);
+    max-width:100%;
+    padding:0;
+    margin:0;
+    text-align:center;
+    line-height:1.3
 }
 #legal a {
-    text-decoration:none
+    text-decoration:none
 }
 #legal a.jobs {
-    color:#fff
+    color:#fff
 }
 #legal a.subtle {
-    color:inherit
+    color:inherit
 }
 #legal a:hover,#legal a:focus {
-    text-decoration:underline
+    text-decoration:underline
 }
 @media all and (min-width: 900px) {
-    #globalfooter {
-    padding:35px 0;
-    background-size:auto 500px
-    }
-    #storagebins {
-        float:left;
-        text-align:left;
-        display:block;
-        width:auto;
-        left:0;
-        margin-left:0;
-        background:none
-    }
-    #storagebins div {
-        display:inline-block;
-        float:none;
-        width:auto
-    }
-    #storagebins div:not(:first-child) {
-        margin-left:48px;
-        border-left:none
-    }
-    #storagebins label {
-        padding:0;
-        width:auto;
-        height:auto;
-        line-height:1;
-        padding-bottom:0
-    }
-    #storagebins label span:after {
-        display:none
-    }
-    #storagebins label:hover,#storagebins label:focus {
-        cursor:default
-    }
-    #storagebins input:checked ~ label {
-        background:none
-    }
-    #storagebins ul {
-        display:block;
-        background:none;
-        padding:19.2px 0 16px;
-        width:auto
-    }
-    #storagebins #sb-university ul,#storagebins #sb-campus-life ul,#storagebins #sb-academics ul {
-        margin-left:0;
-        left:0
-    }
-    #storagebins a {
-        color:#fff
-    }
-    #gimmicks {
-        float:right;
-        text-align:initial;
-        background:none;
-        padding:0;
-        left:0;
-        margin-left:0;
-        width:auto
-    }
-    #gimmicks:after {
-        display:block;
-        content:'';
-        clear:both
-    }
-    #gimmicks>* {
-        float:left
-    }
-    #gimmicks hr {
-        display:none
-    }
-    #gimmicks .uri-tides-widget {
-        margin:0
-    }
-    #gimmicks .uri-tides-widget .label {
-        font-size:16px
-    }
-    #gimmicks .cl-social {
-        margin-left:48px;
-        padding:0;
-        border-top:none
-    }
-    #gimmicks .cl-social li:not(:first-child) {
-        margin-left:10px
-    }
-    #legal {
-        width:100%;
-        font-size:16px;
-        margin-top:8px;
-        padding:0 25px
-    }
-    #legal p {
-        text-align:left
-    }
-    #tagline {
-        background:-webkit-gradient(linear, left top, right top, color-stop(50%, #30557e), color-stop(70%, #c0ddf2), to(#30557e));
-        background:linear-gradient(to right, #30557e 50%, #c0ddf2 70%, #30557e);
-        margin:60px auto 0
-    }
-    #tagline:after {
-        background-position:right 25px top
-    }
+    #globalfooter {
+    padding:35px 0;
+    background-size:auto 500px
+    }
+    #storagebins {
+        float:left;
+        text-align:left;
+        display:block;
+        width:auto;
+        left:0;
+        margin-left:0;
+        background:none
+    }
+    #storagebins div {
+        display:inline-block;
+        float:none;
+        width:auto
+    }
+    #storagebins div:not(:first-child) {
+        margin-left:48px;
+        border-left:none
+    }
+    #storagebins label {
+        padding:0;
+        width:auto;
+        height:auto;
+        line-height:1;
+        padding-bottom:0
+    }
+    #storagebins label span:after {
+        display:none
+    }
+    #storagebins label:hover,#storagebins label:focus {
+        cursor:default
+    }
+    #storagebins input:checked ~ label {
+        background:none
+    }
+    #storagebins ul {
+        display:block;
+        background:none;
+        padding:19.2px 0 16px;
+        width:auto
+    }
+    #storagebins #sb-university ul,#storagebins #sb-campus-life ul,#storagebins #sb-academics ul {
+        margin-left:0;
+        left:0
+    }
+    #storagebins a {
+        color:#fff
+    }
+    #gimmicks {
+        float:right;
+        text-align:initial;
+        background:none;
+        padding:0;
+        left:0;
+        margin-left:0;
+        width:auto
+    }
+    #gimmicks:after {
+        display:block;
+        content:'';
+        clear:both
+    }
+    #gimmicks>* {
+        float:left
+    }
+    #gimmicks hr {
+        display:none
+    }
+    #gimmicks .uri-tides-widget {
+        margin:0
+    }
+    #gimmicks .uri-tides-widget .label {
+        font-size:16px
+    }
+    #gimmicks .cl-social {
+        margin-left:48px;
+        padding:0;
+        border-top:none
+    }
+    #gimmicks .cl-social li:not(:first-child) {
+        margin-left:10px
+    }
+    #legal {
+        width:100%;
+        font-size:16px;
+        margin-top:8px;
+        padding:0 25px
+    }
+    #legal p {
+        text-align:left
+    }
+    #tagline {
+        background:-webkit-gradient(linear, left top, right top, color-stop(50%, #30557e), color-stop(70%, #c0ddf2), to(#30557e));
+        background:linear-gradient(to right, #30557e 50%, #c0ddf2 70%, #30557e);
+        margin:60px auto 0
+    }
+    #tagline:after {
+        background-position:right 25px top
+    }
 }
 @media all and (min-width: 1050px) {
-    #basement,#legal,#tagline,#tagline:after {
-        width:1000px;
-        padding:0
-    }
-    #tagline:after {
-        background-position:right top
-    }
+    #basement,#legal,#tagline,#tagline:after {
+        width:1000px;
+        padding:0
+    }
+    #tagline:after {
+        background-position:right top
+    }
 }
 
 @media print {
-    #globalfooter {
-        background:none;
-        padding:0
-    }
-    #basement,#tagline {
-        display:none
-    }
-    #legal {
-        width:100%;
-        margin:0;
-        padding-top:20px;
-        border-top:1px solid #ddd
-    }
-    #legal p {
-        color:#000;
-        text-align:left
-    }
-    #legal a.jobs {
-        display:none
-    }
+    #globalfooter {
+        background:none;
+        padding:0
+    }
+    #basement,#tagline {
+        display:none
+    }
+    #legal {
+        width:100%;
+        margin:0;
+        padding-top:20px;
+        border-top:1px solid #ddd
+    }
+    #legal p {
+        color:#000;
+        text-align:left
+    }
+    #legal a.jobs {
+        display:none
+    }
 }
 #sitebanner {
-    position:relative;
-    margin-bottom:1px;
-    z-index:10
+    position:relative;
+    margin-bottom:1px;
+    z-index:10
 }
 #sitebanner.light #siteidentity h1,#sitebanner.light #siteidentity h2 {
-    color:#fff
+    color:#fff
 }
 #sitebanner.light #sb-screen {
-    display:block;
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.15)
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.15)
 }
 #sb-backdrop {
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    left:0
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0
 }
 #sb-background-image {
-    display:block;
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    left:0;
-    background-color:#fff;
-    background-position:center center;
-    background-size:cover
+    display:block;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color:#fff;
+    background-position:center center;
+    background-size:cover
 }
 #sb-screen {
-    display:none
+    display:none
 }
 #sitebranding {
-    position:relative;
-    width:100%;
-    margin:0 auto;
-    padding:32px 25px;
-    color:#002147;
-    -webkit-box-sizing:border-box;
-    -moz-box-sizing:border-box;
-    box-sizing:border-box;
-    -webkit-transition:all .2s ease-in-out;
-    transition:all .2s ease-in-out;
-    z-index:2
+    position:relative;
+    width:100%;
+    margin:0 auto;
+    padding:32px 25px;
+    color:#002147;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    z-index:2
 }
 #siteidentity h1 {
-    font-family:"Lato","Hind",Arial,sans-serif;
-    font-weight: 700;
-    margin:0;
-    max-width:100%;
-    font-size:30px;
-    color:#fff
+    font-family:"Lato","Hind",Arial,sans-serif;
+    font-weight: 700;
+    margin:0;
+    max-width:100%;
+    font-size:30px;
+    color:#fff
 }
 #siteidentity h1 a,#siteidentity h1 a:visited {
-    color:inherit
+    color:inherit
 }
 #siteidentity h2 {
-    font-size:22px;
-    font-weight:400;
-    color:#000;
-    padding-top:8px;
-    margin:0
+    font-size:22px;
+    font-weight:400;
+    color:#000;
+    padding-top:8px;
+    margin:0
 }
 #sitesocial ul {
-    font-size:initial;
-    margin-top:16px;
-    padding-left: 0
+    font-size:initial;
+    margin-top:16px;
+    padding-left: 0
 }
 @media all and (min-width: 600px) {
-    #sitebranding {
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-moz-box;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-align:end;
-    -webkit-align-items:flex-end;
-    -moz-box-align:end;
-    -ms-flex-align:end;
-    align-items:flex-end;
-    -webkit-box-pack:justify;
-    -webkit-justify-content:space-between;
-    -moz-box-pack:justify;
-    -ms-flex-pack:justify;
-    justify-content:space-between
+    #sitebranding {
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-moz-box;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-align:end;
+    -webkit-align-items:flex-end;
+    -moz-box-align:end;
+    -ms-flex-align:end;
+    align-items:flex-end;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    -moz-box-pack:justify;
+    -ms-flex-pack:justify;
+    justify-content:space-between
 }
 #sitesocial ul {
-    margin:0;
+    margin:0;
 }
 }
 @media all and (min-width: 800px) {
-    #sitebanner {
-        margin-bottom:0
-    }
+    #sitebanner {
+        margin-bottom:0
+    }
 }
 @media all and (min-width: 1050px) {
-    #sitebranding {
-        width:1000px;
-        padding:35.2px 0;
-        font-size:32px
-    }
+    #sitebranding {
+        width:1000px;
+        padding:35.2px 0;
+        font-size:32px
+    }
 }
 @media print {
-    #sb-backdrop,#sitesocial {
-        display:none
-    }
-    #siteheader {
-        margin-bottom:48px
-    }
-    #sitebranding {
-        width:100%;
-        margin:0
-    }
-    #sitebanner #siteidentity h1,#sitebanner #siteidentity h2,#sitebanner.light #siteidentity h1,#sitebanner.light #siteidentity h2 {
-        color:#000
-    }
-    #sitebanner {
-        border-bottom:1px solid #ddd
-    }
+    #sb-backdrop,#sitesocial {
+        display:none
+    }
+    #siteheader {
+        margin-bottom:48px
+    }
+    #sitebranding {
+        width:100%;
+        margin:0
+    }
+    #sitebanner #siteidentity h1,#sitebanner #siteidentity h2,#sitebanner.light #siteidentity h1,#sitebanner.light #siteidentity h2 {
+        color:#000
+    }
+    #sitebanner {
+        border-bottom:1px solid #ddd
+    }
 }
 </style>
 
 <style>
 cl-social {
-    display:inline-block;
-    list-style:none;
-    margin:0
+    display:inline-block;
+    list-style:none;
+    margin:0
 }
 .cl-social li {
-    display:inline-block;
-    margin:0;
-    padding:0
+    display:inline-block;
+    margin:0;
+    padding:0
 }
 .cl-social li:not(:first-child) {
-    margin-left:10px
+    margin-left:10px
 }
 .cl-social a {
-    position:relative;
-    top:0;
-    display:block;
-    width:0;
-    height:0;
-    overflow:hidden;
-    padding-left:20px;
-    padding-bottom:15px;
-    background-image:url(https://www.uri.edu/wp-content/plugins/uri-component-library/i/sprite-social.png);
-    background-repeat:no-repeat;
-    background-size:60px auto;
-    -webkit-transition:top .1s ease-in-out;
-    transition:top .1s ease-in-out
+    position:relative;
+    top:0;
+    display:block;
+    width:0;
+    height:0;
+    overflow:hidden;
+    padding-left:20px;
+    padding-bottom:15px;
+    background-image:url(https://www.uri.edu/wp-content/plugins/uri-component-library/i/sprite-social.png);
+    background-repeat:no-repeat;
+    background-size:60px auto;
+    -webkit-transition:top .1s ease-in-out;
+    transition:top .1s ease-in-out
 }
 .cl-social a:hover {
-    top:-1px
+    top:-1px
 }
 .cl-social.color a.cl-social-facebook {
-    background-position:0 0
+    background-position:0 0
 }
 .cl-social.color a.cl-social-instagram {
-    background-position:0 -15px
+    background-position:0 -15px
 }
 .cl-social.color a.cl-social-twitter {
-    background-position:0 -30px
+    background-position:0 -30px
 }
 .cl-social.color a.cl-social-linkedin {
-    background-position:0 -45px
+    background-position:0 -45px
 }
 .cl-social.color a.cl-social-youtube {
-    background-position:0 -60px
+    background-position:0 -60px
 }
 .cl-social.color a.cl-social-snapchat {
-    background-position:0 -75px
+    background-position:0 -75px
 }
 .cl-social.dark a.cl-social-facebook {
-    background-position:-20px 0
+    background-position:-20px 0
 }
 .cl-social.dark a.cl-social-instagram {
-    background-position:-20px -15px
+    background-position:-20px -15px
 }
 .cl-social.dark a.cl-social-twitter {
-    background-position:-20px -30px
+    background-position:-20px -30px
 }
 .cl-social.dark a.cl-social-linkedin {
-    background-position:-20px -45px
+    background-position:-20px -45px
 }
 .cl-social.dark a.cl-social-youtube {
-    background-position:-20px -60px
+    background-position:-20px -60px
 }
 .cl-social.dark a.cl-social-snapchat {
-    background-position:-20px -75px
+    background-position:-20px -75px
 }
 .cl-social.light a.cl-social-facebook {
-    background-position:-40px 0
+    background-position:-40px 0
 }
 .cl-social.light a.cl-social-instagram {
-    background-position:-40px -15px
+    background-position:-40px -15px
 }
 .cl-social.light a.cl-social-twitter {
-    background-position:-40px -30px
+    background-position:-40px -30px
 }
 .cl-social.light a.cl-social-linkedin {
-    background-position:-40px -45px
+    background-position:-40px -45px
 }
 .cl-social.light a.cl-social-youtube {
-    background-position:-40px -60px
+    background-position:-40px -60px
 }
 .cl-social.light a.cl-social-snapchat {
-    background-position:-40px -75px
+    background-position:-40px -75px
 }
 </style>
 
@@ -852,15 +838,15 @@ cl-social {
 
 <!-- Place this script as near to the end of your BODY as possible. -->
 <script type="text/javascript">
-  (function() {
-    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
-    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.js/libraryh3lp.js?13442";
-    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
-  })();
+  (function() {
+    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
+    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.js/libraryh3lp.js?13442";
+    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
+  })();
 
 $(document).ready(function() {
-    $('<div id="s-lg-creative-commons" class="container s-lib-side-borders" style="text-align: center !important; padding: 10px 0 !important; margin-top: 20px !important; font-size: 14px !important; display: block !important; font-weight: bold !important;"><p style="margin: 0 !important;">This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: #0000FF !important; text-decoration: underline !important;">Creative Commons Attribution 4.0 International License</a>.</p></div>')
-        .insertBefore('#s-lib-footer-public');
+    $('<div id="s-lg-creative-commons" class="container s-lib-side-borders" style="text-align: center !important; padding: 10px 0 !important; margin-top: 20px !important; font-size: 14px !important; display: block !important; font-weight: bold !important;"><p style="margin: 0 !important;">This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: #0000FF !important; text-decoration: underline !important;">Creative Commons Attribution 4.0 International License</a>.</p></div>')
+        .insertBefore('#s-lib-footer-public');
 });
 </script>
 
@@ -873,236 +859,226 @@ $(document).ready(function() {
 
 /* Modern CSS Variables */
 :root {
-  --color-primary: #002147;
-  --color-secondary: #0066cc;
-  --color-accent: #4a90e2;
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-800: #1f2937;
-  --font-primary: 'Inter', sans-serif;
-  --font-secondary: 'Lato', sans-serif;
-  --text-base: clamp(1.25rem, 1.15rem + 0.65vw, 1.35rem);
-  --text-lg: clamp(1.4rem, 1.25rem + 0.8vw, 1.5rem);
-  --text-xl: clamp(1.5rem, 1.35rem + 0.95vw, 1.75rem);
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --radius-md: 0.375rem;
-  --radius-lg: 0.5rem;
-  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
-  --shadow-md: 0 4px 6px rgb(0 0 0 / 0.1);
+  --color-primary: #002147;
+  --color-secondary: #0066cc;
+  --color-accent: #4a90e2;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-800: #1f2937;
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Lato', sans-serif;
+  --text-base: clamp(1.25rem, 1.15rem + 0.65vw, 1.35rem);
+  --text-lg: clamp(1.4rem, 1.25rem + 0.8vw, 1.5rem);
+  --text-xl: clamp(1.5rem, 1.35rem + 0.95vw, 1.75rem);
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px rgb(0 0 0 / 0.1);
 }
 
 /* Base Styles */
 body {
-  font-family: var(--font-primary);
-  font-size: var(--text-base);
-  color: var(--color-gray-800);
-  background-color: var(--color-gray-50);
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  color: var(--color-gray-800);
+  background-color: var(--color-gray-50);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Accessibility Improvements */
 :focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 2px;
-  border-radius: var(--radius-md);
-}
-
-/* Fix for form content overflowing its container */
-form {
-  overflow: hidden; /* Hide any content that extends beyond the form's bounding box */
-}
-
-form * {
-  max-width: 100%; /* Ensure all child elements within a form do not exceed its width */
-  box-sizing: border-box; /* Re-affirm box-sizing for all descendants */
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+  border-radius: var(--radius-md);
 }
 
 /* Enhanced Box Headers */
 .s-lib-box .s-lib-box-title {
-  font-size: var(--text-xl);
-  font-weight: 600;
-  color: var(--color-primary);
-  padding: var(--space-lg);
-  background: linear-gradient(135deg, var(--color-gray-50), var(--color-gray-100));
-  border-left: 4px solid var(--color-accent);
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
-  box-shadow: var(--shadow-sm);
-  transition: all 0.3s ease;
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--color-primary);
+  padding: var(--space-lg);
+  background: linear-gradient(135deg, var(--color-gray-50), var(--color-gray-100));
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
 }
 
 .s-lib-box .s-lib-box-title:hover {
-  background: linear-gradient(135deg, var(--color-gray-100), var(--color-gray-200));
-  box-shadow: var(--shadow-md);
+  background: linear-gradient(135deg, var(--color-gray-100), var(--color-gray-200));
+  box-shadow: var(--shadow-md);
 }
 
 /* Enhanced Boxes */
 .s-lib-box {
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--color-gray-200);
-  overflow: hidden;
-  margin-bottom: var(--space-lg);
-  transition: all 0.3s ease;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-gray-200);
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+  transition: all 0.3s ease;
 }
 
 .s-lib-box:hover {
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-md);
 }
 
 .s-lib-box .s-lib-box-content {
-  padding: var(--space-lg);
-  background-color: white;
+  padding: var(--space-lg);
+  background-color: white;
 }
 
 /* Homepage Box Styles */
 .homepage-box {
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--color-gray-200);
-  overflow: hidden;
-  margin-bottom: var(--space-lg);
-  transition: all 0.3s ease;
-  background-color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-gray-200);
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+  transition: all 0.3s ease;
+  background-color: white;
 }
 
 .homepage-box:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .homepage-box .homepage-box-title {
-  font-size: var(--text-lg);
-  font-weight: 600;
-  color: white;
-  padding: var(--space-md);
-  background-color: var(--color-primary);
-  border-bottom: 4px solid var(--color-accent);
-  text-align: center;
-  text-transform: uppercase;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: white;
+  padding: var(--space-md);
+  background-color: var(--color-primary);
+  border-bottom: 4px solid var(--color-accent);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .homepage-box .homepage-box-content {
-  padding: var(--space-md);
-  font-size: var(--text-base);
-  color: var(--color-gray-800);
-  line-height: 1.6;
+  padding: var(--space-md);
+  font-size: var(--text-base);
+  color: var(--color-gray-800);
+  line-height: 1.6;
 }
 
 /* Apply styles only to homepage */
 body.homepage .s-lib-box {
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-sm);
-  border: 1px solid var(--color-gray-200);
-  overflow: hidden;
-  margin-bottom: var(--space-lg);
-  transition: all 0.3s ease;
-  background-color: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-gray-200);
+  overflow: hidden;
+  margin-bottom: var(--space-lg);
+  transition: all 0.3s ease;
+  background-color: white;
 }
 
 body.homepage .s-lib-box:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 body.homepage .s-lib-box .s-lib-box-title {
-  font-size: var(--text-lg);
-  font-weight: 600;
-  color: white;
-  padding: var(--space-md);
-  background-color: var(--color-primary);
-  border-bottom: 4px solid var(--color-accent);
-  text-align: center;
-  text-transform: uppercase;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: white;
+  padding: var(--space-md);
+  background-color: var(--color-primary);
+  border-bottom: 4px solid var(--color-accent);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 body.homepage .s-lib-box .s-lib-box-content {
-  padding: var(--space-md);
-  font-size: var(--text-base);
-  color: var(--color-gray-800);
-  line-height: 1.6;
+  padding: var(--space-md);
+  font-size: var(--text-base);
+  color: var(--color-gray-800);
+  line-height: 1.6;
 }
 
 /* Original Styles (Unchanged) */
 #siteheader {
-  margin: 0 -15px;
+  margin: 0 -15px;
 }
 
 #actionbar, #globalfooter {
-  font-family: var(--font-secondary);
+  font-family: var(--font-secondary);
 }
 
 #s-lg-guide-header-search {
-  display: none;
+  display: none;
 }
 
 #brandbar {
-  padding: 0;
-  background: white;
-  position: relative;
-  z-index: 9990;
-  margin-left: -15px;
-  margin-right: -15px;
+  padding: 0;
+  background: white;
+  position: relative;
+  z-index: 9990;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 #identity {
-  width: 0;
-  height: 40px;
-  padding-left: 180px;
-  overflow: hidden;
-  float: left;
-  background-image: url("https://www.uri.edu/wp-content/themes/uri-modern/images/logo-inline-white.png");
-  background-position: center left;
-  background-repeat: no-repeat;
-  background-size: 180px auto;
+  width: 0;
+  height: 40px;
+  padding-left: 180px;
+  overflow: hidden;
+  float: left;
+  background-image: url("https://www.uri.edu/wp-content/themes/uri-modern/images/logo-inline-white.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 180px auto;
 }
 
 @media all and (min-width: 370px) {
-  #identity {
-    padding-left: 220px;
-    background-size: 220px auto;
-  }
+  #identity {
+    padding-left: 220px;
+    background-size: 220px auto;
+  }
 }
 
 @media all and (min-width: 420px) {
-  #identity {
-    padding-left: 300px;
-    background-size: 275px auto;
-  }
+  #identity {
+    padding-left: 300px;
+    background-size: 275px auto;
+  }
 }
 
 @media all and (min-width: 800px) {
-  #globalbanner {
-    max-width: 1000px;
-  }
+  #globalbanner {
+    max-width: 1000px;
+  }
 }
 
 @media all and (min-width: 1050px) {
-  #globalbanner-wrapper {
-    padding-left: 0;
-  }
+  #globalbanner-wrapper {
+    padding-left: 0;
+  }
 
-  #globalbanner {
-    margin: 0 auto;
-  }
+  #globalbanner {
+    margin: 0 auto;
+  }
 }
 
 @media print {
-  #globalsearch, #globalbanner-wrapper, #localnav {
-    display: none;
-  }
+  #globalsearch, #globalbanner-wrapper, #localnav {
+    display: none;
+  }
 
-  #identity-print {
-    display: block;
-  }
+  #identity-print {
+    display: block;
+  }
 }
 
 #globalbanner {
-  font-size: 1rem;
+  font-size: 1rem;
 }
 
 
@@ -1110,150 +1086,45 @@ body.homepage .s-lib-box .s-lib-box-content {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
-  background-color: #002147 !important;   /* URI blue */
-  color: #fff !important;                 /* White text */
-  border-color: #002147 !important;
-  font-weight: 600;
+  background-color: #002147 !important;   /* URI blue */
+  color: #fff !important;                 /* White text */
+  border-color: #002147 !important;
+  font-weight: 600;
 }
 
 .nav-tabs > li > a {
-  background-color: #f9fafb !important;   /* Unselected tab background */
-  color: #002147 !important;              /* URI blue text */
-  border-color: #e5e7eb !important;
-  font-weight: 500;
-  transition: background 0.2s, color 0.2s;
+  background-color: #f9fafb !important;   /* Unselected tab background */
+  color: #002147 !important;              /* URI blue text */
+  border-color: #e5e7eb !important;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
 }
 
 .nav-tabs > li > a:hover {
-  background-color: #e5e7eb !important;
-  color: #002147 !important;
+  background-color: #e5e7eb !important;
+  color: #002147 !important;
 }
 
 /* URI blue prev/next navigation buttons (specific to .previous and .next) */
 li.previous a, li.next a,
 li.previous button, li.next button {
-  background-color: #002147 !important; /* URI blue */
-  color: #fff !important;               /* White text */
-  font-weight: bold !important;
-  border: none !important;
-  border-radius: 6px !important;
-  padding: 10px 22px !important;
-  text-decoration: none !important;
-  margin: 8px 4px !important;
-  display: inline-block !important;
-  transition: background 0.2s, color 0.2s;
+  background-color: #002147 !important; /* URI blue */
+  color: #fff !important;               /* White text */
+  font-weight: bold !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 10px 22px !important;
+  text-decoration: none !important;
+  margin: 8px 4px !important;
+  display: inline-block !important;
+  transition: background 0.2s, color 0.2s;
 }
 
 li.previous a:hover, li.next a:hover,
 li.previous button:hover, li.next button:hover {
-  background-color: #0046a0 !important; /* Slightly lighter blue on hover */
-  color: #fff !important;
-  text-decoration: none !important;
+  background-color: #0046a0 !important; /* Slightly lighter blue on hover */
+  color: #fff !important;
+  text-decoration: none !important;
 }
 
 </style>
-
-<style>
-cl-social {
-    display:inline-block;
-    list-style:none;
-    margin:0
-}
-.cl-social li {
-    display:inline-block;
-    margin:0;
-    padding:0
-}
-.cl-social li:not(:first-child) {
-    margin-left:10px
-}
-.cl-social a {
-    position:relative;
-    top:0;
-    display:block;
-    width:0;
-    height:0;
-    overflow:hidden;
-    padding-left:20px;
-    padding-bottom:15px;
-    background-image:url(https://www.uri.edu/wp-content/plugins/uri-component-library/i/sprite-social.png);
-    background-repeat:no-repeat;
-    background-size:60px auto;
-    -webkit-transition:top .1s ease-in-out;
-    transition:top .1s ease-in-out
-}
-.cl-social a:hover {
-    top:-1px
-}
-.cl-social.color a.cl-social-facebook {
-    background-position:0 0
-}
-.cl-social.color a.cl-social-instagram {
-    background-position:0 -15px
-}
-.cl-social.color a.cl-social-twitter {
-    background-position:0 -30px
-}
-.cl-social.color a.cl-social-linkedin {
-    background-position:0 -45px
-}
-.cl-social.color a.cl-social-youtube {
-    background-position:0 -60px
-}
-.cl-social.color a.cl-social-snapchat {
-    background-position:0 -75px
-}
-.cl-social.dark a.cl-social-facebook {
-    background-position:-20px 0
-}
-.cl-social.dark a.cl-social-instagram {
-    background-position:-20px -15px
-}
-.cl-social.dark a.cl-social-twitter {
-    background-position:-20px -30px
-}
-.cl-social.dark a.cl-social-linkedin {
-    background-position:-20px -45px
-}
-.cl-social.dark a.cl-social-youtube {
-    background-position:-20px -60px
-}
-.cl-social.dark a.cl-social-snapchat {
-    background-position:-20px -75px
-}
-.cl-social.light a.cl-social-facebook {
-    background-position:-40px 0
-}
-.cl-social.light a.cl-social-instagram {
-    background-position:-40px -15px
-}
-.cl-social.light a.cl-social-twitter {
-    background-position:-40px -30px
-}
-.cl-social.light a.cl-social-linkedin {
-    background-position:-40px -45px
-}
-.cl-social.light a.cl-social-youtube {
-    background-position:-40px -60px
-}
-.cl-social.light a.cl-social-snapchat {
-    background-position:-40px -75px
-}
-</style>
-
-<!-- Place this div in your web page where you want your chat widget to appear. -->
-<div class="needs-js"></div>
-
-<!-- Place this script as near to the end of your BODY as possible. -->
-<script type="text/javascript">
-  (function() {
-    var x = document.createElement("script"); x.type = "text/javascript"; x.async = true;
-    x.src = (document.location.protocol === "https:" ? "https://" : "http://") + "libraryh3lp.js/libraryh3lp.js?13442";
-    var y = document.getElementsByTagName("script")[0]; y.parentNode.insertBefore(x, y);
-  })();
-
-$(document).ready(function() {
-    $('<div id="s-lg-creative-commons" class="container s-lib-side-borders" style="text-align: center !important; padding: 10px 0 !important; margin-top: 20px !important; font-size: 14px !important; display: block !important; font-weight: bold !important;"><p style="margin: 0 !important;">This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" style="color: #0000FF !important; text-decoration: underline !important;">Creative Commons Attribution 4.0 International License</a>.</p></div>')
-        .insertBefore('#s-lib-footer-public');
-});
-</script>
